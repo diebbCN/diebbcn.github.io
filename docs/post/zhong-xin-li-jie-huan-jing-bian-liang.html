@@ -76,7 +76,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 环境是无时无刻围绕着我们的东西，就好比空气，你走到哪都有，因此你在哪都能呼吸到空气。与linux中的“环境”类比，环境变量就像我们周围的空气，在系统任意目录下，都能执行，都能呼吸这个空气。比如，你可以在任意位置使用 ls 命令查看当前目录下的文件。等等许多命令之所以能在任意地方执行，就是因为他们是环境变量的一份子，“是空气的组成成分之一”。<br>
 可以想象环境变量就是围绕在人身边的精灵，你走到哪他跟到哪。你可以随时命令这些精灵干事。</p>
 <p>linux中如何设置环境变量？</p>
-<p>linux中使用 PATH</p></div>
+<p>linux中使用 PATH这个变量作为环境的载体，定义该环境中的组成元素(目录)，元素间用冒号分隔。例子：将/new/path/bin添加为环境变量PATH=${PATH}:/new/path/bin<br>
+其中啊，${PATH}就是调用已存在的环境变量，在这里做了个字符串拼接成新的环境变量列表。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
